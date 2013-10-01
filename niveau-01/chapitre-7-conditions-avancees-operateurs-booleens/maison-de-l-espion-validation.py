@@ -1,4 +1,3 @@
-
 ##################################
 # fichier maison-de-l-espion-validation.py
 # nom de l'exercice :  Maison de l'espion
@@ -16,4 +15,16 @@
 
 
 # mettre votre code ici
+absmin=int(input())
+absmax=int(input())
+ordmin=int(input())
+ordmax=int(input())
+nbrM=int(input())
+x=0
+for i in range(nbrM):
+    maisonx=int(input())
+    maisony=int(input())
+    if absmin<=maisonx<=absmax and ordmin<=maisony<=ordmax:
+        x+=1
+print(x)
 
