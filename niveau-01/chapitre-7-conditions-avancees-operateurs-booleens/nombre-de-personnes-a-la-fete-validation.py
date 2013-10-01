@@ -1,4 +1,3 @@
-
 ##################################
 # fichier nombre-de-personnes-a-la-fete-validation.py
 # nom de l'exercice :  Nombre de personnes à la fête
@@ -16,4 +15,16 @@
 
 
 # mettre votre code ici
+nbrpersonne=int(input())
+x=[]
+k=0
+for i in range(nbrpersonne*2):
+    gars=int(input())
+    if gars>0:
+        x+=[gars]
+        if len(x)>k:
+            k=len(x)
+    else:
+        x.remove(-gars)
+print(k)
 
