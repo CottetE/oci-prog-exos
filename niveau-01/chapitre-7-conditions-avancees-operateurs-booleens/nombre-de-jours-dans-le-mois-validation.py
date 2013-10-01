@@ -1,4 +1,3 @@
-
 ##################################
 # fichier nombre-de-jours-dans-le-mois-validation.py
 # nom de l'exercice :  Nombre de jours dans le mois
@@ -16,4 +15,11 @@
 
 
 # mettre votre code ici
+mois=int(input())
+if 1<=mois<=3 or 7<=mois<=9:
+    print(30)
+elif mois==11:
+    print(29)
+else:
+    print(31)
 
