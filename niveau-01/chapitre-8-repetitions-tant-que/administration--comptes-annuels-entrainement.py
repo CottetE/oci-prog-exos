@@ -1,4 +1,3 @@
-
 ##################################
 # fichier administration--comptes-annuels-entrainement.py
 # nom de l'exercice :  Administration : comptes annuels
@@ -16,4 +15,8 @@
 
 
 # mettre votre code ici
+nbr=0.110
+for i in range(15):
+    nbr*=2
+print(nbr/10)
 
