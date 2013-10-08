@@ -1,4 +1,3 @@
-
 ##################################
 # fichier departement-de-medecine--controle-d-une-epidemie-entrainement.py
 # nom de l'exercice :  Département de médecine : contrôle d'une épidémie
@@ -16,4 +15,11 @@
 
 
 # mettre votre code ici
+population=int(input())
+malade=0
+x=0
+while malade<population:
+    malade=3**x
+    x+=1
+print(x)
 
