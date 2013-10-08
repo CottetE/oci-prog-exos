@@ -15,8 +15,10 @@
 
 
 # mettre votre code ici
-nbr=0.110
-for i in range(15):
-    nbr*=2
-print(nbr/10)
-
+somme=0
+while 1:
+    entier=int(input())
+    if entier==-1:
+        break
+    somme+=entier
+print(somme)
