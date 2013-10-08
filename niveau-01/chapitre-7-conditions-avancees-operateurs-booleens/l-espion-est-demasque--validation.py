@@ -1,4 +1,3 @@
-
 ##################################
 # fichier l-espion-est-demasque--validation.py
 # nom de l'exercice :  L'espion est démasqué !
@@ -16,4 +15,30 @@
 
 
 # mettre votre code ici
+nbrPersonnes=int(input())
+for i in range(nbrPersonnes):
+    critere=0
+    taille=int(input())
+    age=int(input())
+    masse=int(input())
+    cheval=int(input())
+    cheveux=int(input())
+    if 178<=taille<=182:
+        critere+=1
+    if age>=34:
+        critere+=1
+    if masse<70:
+        critere+=1
+    if cheval==0:
+        critere+=1
+    if cheveux==1:
+        critere+=1
+    if critere==5:
+        print("Très probable")
+    elif 3<=critere<=4:
+        print("Probable")
+    elif critere==0:
+        print("Impossible")
+    else:
+        print("Peu probable")
 
