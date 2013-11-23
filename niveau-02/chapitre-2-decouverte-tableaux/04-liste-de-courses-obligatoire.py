@@ -17,3 +17,8 @@
 
 # mettre votre code ici
 
+prixkg=[9,5,12,15,7,42,13,10,1,20]
+couttotal=0
+for i in range(10):
+    couttotal+=int(input())*prixkg[i]
+print(couttotal)

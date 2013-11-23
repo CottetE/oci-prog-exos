@@ -17,3 +17,11 @@
 
 # mettre votre code ici
 
+nbrope=int(input())
+liste = [0]*10
+for i in range(nbrope):
+    numero=int(input())-1
+    quantite=int(input())
+    liste[numero]+=quantite
+for i in liste:
+    print(i)

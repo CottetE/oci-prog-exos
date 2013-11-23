@@ -17,3 +17,11 @@
 
 # mettre votre code ici
 
+nbrProduit=int(input())
+nbrPersonne=int(input())
+liste=[0]*nbrProduit
+for i in range(nbrPersonne):
+    numero=int(input())
+    liste[numero]+=1
+for i in liste:
+    print(i)
