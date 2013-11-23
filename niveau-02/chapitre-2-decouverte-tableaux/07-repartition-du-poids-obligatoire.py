@@ -17,3 +17,15 @@
 
 # mettre votre code ici
 
+nbrChar=int(input())
+mTotale=0
+char=[]
+for i in range(nbrChar):
+    newChar=float(input())
+    mTotale+=newChar
+    char+=[newChar]
+
+indice=mTotale/nbrChar
+for i in char:
+    change=-(i-indice)
+    print(change)
