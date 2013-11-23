@@ -17,3 +17,19 @@
 
 # mettre votre code ici
 
+nbrDepla=int(input())
+liste=[]
+
+for i in range(nbrDepla):
+    liste= [int(input())] + liste
+for i in liste:
+    if i ==1:
+        print(2)
+    elif i ==2:
+        print(1)
+    elif i ==4:
+        print(5)
+    elif i ==5:
+        print(4)
+    else:
+        print(3)
