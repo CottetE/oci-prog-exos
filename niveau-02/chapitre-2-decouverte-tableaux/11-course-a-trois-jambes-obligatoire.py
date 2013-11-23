@@ -17,3 +17,15 @@
 
 # mettre votre code ici
 
+nbrPers=int(input())
+liste=[]
+
+for i in range(nbrPers):
+    liste+=[int(input())]
+liste.sort()
+i=0
+j=nbrPers -1
+while i < nbrPers/2:
+    print(liste[i], liste[j])
+    i+=1
+    j-=1
