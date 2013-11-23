@@ -17,3 +17,15 @@
 
 # mettre votre code ici
 
+nbrHabit=int(input())
+fortune=[]
+
+for i in range(nbrHabit):
+    fortune+=[int(input())]
+fortune.sort()
+
+if nbrHabit%2 != 0:
+    print(int(fortune[int(nbrHabit/2)]))
+else:
+    valeur=(fortune[int(nbrHabit/2)-1]+fortune[int(nbrHabit/2)])/2
+    print(valeur)
