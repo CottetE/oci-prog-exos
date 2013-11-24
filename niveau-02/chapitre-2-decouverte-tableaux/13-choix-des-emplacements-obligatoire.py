@@ -17,3 +17,13 @@
 
 # mettre votre code ici
 
+nbrEmplace=int(input())
+listeEmplace = nbrEmplace * ['0']
+
+for i in range(nbrEmplace):
+    numero=int(input())
+
+    listeEmplace[numero]=i
+    
+for i in listeEmplace:
+    print(i)

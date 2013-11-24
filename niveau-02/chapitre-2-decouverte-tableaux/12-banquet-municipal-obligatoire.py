@@ -17,3 +17,17 @@
 
 # mettre votre code ici
 
+nbrPosition=int(input())
+nbrChange=int(input())
+listePosition=[]
+listeChange=[]
+
+for i in range(nbrPosition):
+    listePosition+=[int(input())]
+for i in range(nbrChange):
+    premier=int(input())
+    deuxieme=int(input())
+
+    listePosition[premier],listePosition[deuxieme]=listePosition[deuxieme],listePosition[premier]
+for i in listePosition:
+    print(i)
