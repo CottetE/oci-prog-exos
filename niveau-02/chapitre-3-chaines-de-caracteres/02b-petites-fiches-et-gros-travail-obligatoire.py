@@ -17,3 +17,8 @@
 
 # mettre votre code ici
 
+for i in range(6):
+   nom = input()
+   titre = input()
+   print(titre)
+   print(nom)
