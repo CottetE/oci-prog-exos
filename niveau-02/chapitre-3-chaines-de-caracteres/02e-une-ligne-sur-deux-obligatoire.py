@@ -17,3 +17,9 @@
 
 # mettre votre code ici
 
+nbrLigne = int(input())
+
+for i in range(nbrLigne):
+    ligneTxt = input()
+    if i % 2 == 0:
+        print(ligneTxt)

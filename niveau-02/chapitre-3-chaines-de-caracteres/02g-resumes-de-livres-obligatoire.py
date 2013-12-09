@@ -17,3 +17,11 @@
 
 # mettre votre code ici
 
+nbrLivre = int(input())
+longueurMin = int(input())
+
+for i in range(nbrLivre):
+    titre = input()
+    resume = input()
+    if len(resume) <= longueurMin:
+        print(titre)

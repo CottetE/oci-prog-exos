@@ -17,3 +17,11 @@
 
 # mettre votre code ici
 
+nbrLivre = int(input())
+livreLu = ''
+
+for i in range(nbrLivre):
+    livre = input()
+    if len(livre) > len(livreLu):
+        print(livre)
+        livreLu = livre

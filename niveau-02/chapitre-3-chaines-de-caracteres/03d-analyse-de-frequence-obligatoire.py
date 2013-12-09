@@ -17,3 +17,23 @@
 
 # mettre votre code ici
 
+nbrLigne, nbrMot = map(int, input().split())
+listeMots = []
+listeLongueurMot = []
+
+for i in range(nbrLigne):
+    ligne = input().split()
+    for i in ligne:
+        listeMots += [i]
+    
+for i in listeMots:
+    listeLongueurMot += [len(i)]
+    
+listeLongueurMot.append(100) #ajout d'une valeur max pour la bon fonctionnement de la fin
+listeLongueurMot.sort()
+
+indice = listeLongueurMot[0]
+for i in listeLongueurMot:
+    if i > indice:
+        print("{} : {}".format(indice, listeLongueurMot.count(indice)))
+        indice = i

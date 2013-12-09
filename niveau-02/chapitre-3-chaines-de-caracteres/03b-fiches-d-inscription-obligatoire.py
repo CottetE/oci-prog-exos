@@ -17,3 +17,8 @@
 
 # mettre votre code ici
 
+nbrPersonne = int(input())
+
+for i in range(nbrPersonne):
+    prenom, nom = input().split()
+    print(nom, prenom)
