@@ -23,5 +23,5 @@ longueurMin = int(input())
 for i in range(nbrLivre):
     titre = input()
     resume = input()
-    if len(resume) <= longueurMin:
+    if len(resume) < longueurMin:
         print(titre)
