@@ -17,3 +17,6 @@
 
 # mettre votre code ici
 
+chaine = input()
+for i in chaine:
+   print(i)

@@ -17,3 +17,10 @@
 
 # mettre votre code ici
 
+nbrLignes = int(input())
+for i in range(nbrLignes):
+   chaine = input()
+   chaineInverse = ""
+   for i in chaine:
+        chaineInverse = i + chaineInverse
+   print(chaineInverse)

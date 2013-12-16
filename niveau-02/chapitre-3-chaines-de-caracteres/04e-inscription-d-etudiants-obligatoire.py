@@ -17,3 +17,10 @@
 
 # mettre votre code ici
 
+nom = input()
+if nom[0] in 'ABCDEF':
+   print(1)
+elif nom[0] in 'GHIJKLMNOP':
+   print(2)
+else:
+   print(3)

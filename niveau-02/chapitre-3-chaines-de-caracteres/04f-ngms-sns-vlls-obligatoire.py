@@ -17,3 +17,15 @@
 
 # mettre votre code ici
 
+titre = input()
+nom = input()
+consonneTitre = ''
+consonneNom = ''
+for i in titre:
+   if i not in 'AEIOUY ':
+      consonneTitre += i
+print(consonneTitre)
+for i in nom:
+   if i not in 'AEIOUY ':
+      consonneNom += i
+print(consonneNom)

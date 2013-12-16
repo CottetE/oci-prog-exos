@@ -17,3 +17,7 @@
 
 # mettre votre code ici
 
+ligne = input()
+print(ligne.replace(' ','_'))
+
+#c'est surement pas la manière dont il fallait vraiment faire mais c'est le plus efficace :D

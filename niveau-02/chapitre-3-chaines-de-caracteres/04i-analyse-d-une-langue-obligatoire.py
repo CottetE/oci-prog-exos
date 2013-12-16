@@ -17,3 +17,13 @@
 
 # mettre votre code ici
 
+lettre = input()
+nbrLignes = int(input())
+compteur = 0
+for i in range(nbrLignes):
+   chaine = input()
+   for i in chaine:
+      if i == lettre:
+         compteur += 1
+print(compteur)
+         
