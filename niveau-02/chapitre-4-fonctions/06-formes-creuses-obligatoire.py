@@ -17,3 +17,36 @@
 
 # mettre votre code ici
 
+def rectangle(ligne,colonne):
+    """dessine un rectangle creux avec des '#'"""
+    print('#'*colonne)
+    if ligne == 1:
+        print('\n')
+        return
+    if colonne == 1:
+       for i in range(ligne-2):
+          print('#')
+    else:
+       for i in range(ligne-2):
+           print('#'+' '*(colonne-2)+'#')
+    print('#'*colonne, end='\n\n')
+
+def triangle(ligne):
+    """dessine un triangle rectangle creux avec des '@'"""
+    print('@')
+    if ligne == 1:
+        print('\n')
+        return
+    for i in range(ligne-2):
+        print('@'+' ' * i +'@')
+    print('@'*ligne, end='\n\n')
+
+#corps du programme
+ligne = int(input())        #ligne seule
+rectangleL = int(input())   #ligne du rectangle
+rectangleC = int(input())   #colonne du rectangle
+triangleL = int(input())    #ligne triangle
+
+print('X'*ligne, end='\n\n')
+rectangle(rectangleL, rectangleC)
+triangle(triangleL)
