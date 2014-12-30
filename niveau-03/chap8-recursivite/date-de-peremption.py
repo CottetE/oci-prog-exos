@@ -5,11 +5,11 @@ def operation(n):
            nbr = -nbr
         for j in range(nbr):
             if date == 0:
-                del(liste[-1])
+                del(pile[-1])
             else:
-                liste.append(date)
+                pile.append(date)
                 
-    print(min(liste))       #merci à Simon
+    print(min(pile))       #merci à Simon
 
 pile = []
 n = int(input())
