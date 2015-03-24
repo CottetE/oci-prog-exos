@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "MaPolice";
+    src: url("kaushan-script/KaushanScript-Regular.otf");
+}
+/*j'ai un problème avec MaPolice si j'en précise le format*/
+
+@media screen and (max-width: 1024px) {
+    /*ma construction avec inline-block pour mes différentes sections me permet déjà de les mettre l'un sous l'autre si l'écran d'affichage et réduit*/
+    .liseret{
+        visibility: hidden;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: "MaPolice",cursive;
+    color: #abcdef;
+}
+
+.citation {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.right {
+    float:right;
+    box-shadow: 15px 15px 50px deeppink;
+}
+
+h2 {
+    color: #adc54d;
+    border: dotted;
+    width: 200px;
+    border-radius: 10px;
+}
+
+p,ul {
+    font-size: 20px;
+}
+
+body {
+    background-image: url("fond.jpeg");
+    background-attachment: fixed;
+}
+
+.section{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 10px;
+}
+
+span {
+    font-size: 45px;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.liseret {    
+    margin: 20px;
+    text-align: center;
+
+    color:deeppink;
+    background-color: #afffff;
+    border:solid;
+    width: 40px;
+    height:520px;
+    float:left;
+}
